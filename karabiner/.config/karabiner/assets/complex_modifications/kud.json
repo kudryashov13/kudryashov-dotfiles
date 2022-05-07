@@ -1,0 +1,25 @@
+{
+  "title": "Kudryashov custom rules",
+  "rules": [
+    {
+      "description": "Change right_command to shift+alt+ctrl.",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift",
+              "modifiers": ["left_control", "left_option"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
