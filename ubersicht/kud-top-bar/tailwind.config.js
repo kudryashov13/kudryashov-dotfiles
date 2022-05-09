@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  content: ["./main.jsx", "./lib/{components,widgets}/*.jsx"],
+  content: ["./*.jsx", "./lib/{components,widgets}/*.jsx"],
   theme: {
     extend: {},
   },

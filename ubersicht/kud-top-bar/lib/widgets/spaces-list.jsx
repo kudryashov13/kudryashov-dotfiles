@@ -1,7 +1,7 @@
 import { React } from "uebersicht";
 import Space from "../components/space.jsx";
 
-const Spaces = ({ spaces, displays }) => {
+const SpacesList = ({ spaces, displays }) => {
   const displaysWithSpaces = displays.map((display) => {
     const dsp = spaces.filter((space) => display.spaces.some((spi) => spi === space.index));
     return {
@@ -9,9 +9,6 @@ const Spaces = ({ spaces, displays }) => {
       spaces: dsp,
     };
   });
-
-  console.log("displays :>> ", displays);
-  console.log("spaces :>> ", spaces);
 
   return (
     <div className="flex text-white">
@@ -28,4 +25,4 @@ const Spaces = ({ spaces, displays }) => {
   );
 };
 
-export default Spaces;
+export default SpacesList;

@@ -1,5 +1,5 @@
 # Constants
-widget_id=kud-top-bar-main-jsx
+widget_id=kud-top-bar-spaces-jsx
 yabai_path=/opt/homebrew/bin/yabai
 
 apple_script="tell application id \"tracesOf.Uebersicht\" to refresh widget id \"$widget_id\""

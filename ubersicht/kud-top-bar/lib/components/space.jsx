@@ -6,8 +6,8 @@ const Space = ({ space }) => {
     >
       {space.index}
       <div className="absolute -top-[12px] right-0">
-        {new Array(space.display).fill(".").map((dot) => (
-          <span>{dot}</span>
+        {new Array(space.display).fill(".").map((dot, index) => (
+          <span key={index}>{dot}</span>
         ))}
       </div>
     </div>
