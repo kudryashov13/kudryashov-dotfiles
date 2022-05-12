@@ -1,4 +1,4 @@
-set relativenumber
+set number relativenumber
 set scrolloff=25
 set smartindent
 set tabstop=2

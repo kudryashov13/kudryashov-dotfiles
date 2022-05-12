@@ -3,7 +3,6 @@
 # custom
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-# yabai -m signal --add event=space_changed action="/usr/local/bin/node /Users/mkudryashov/.config/skhdrc-yabai-sh/top_padding.js"
 # custom end
 
 # global settings
