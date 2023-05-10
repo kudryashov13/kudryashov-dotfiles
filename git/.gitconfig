@@ -3,3 +3,5 @@
 	name = Maxim Kudryashov
 [core]
 	excludesfile = /Users/mkudryashov/.gitignore
+[pull]
+	rebase = false

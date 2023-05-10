@@ -1,4 +1,3 @@
-# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -109,3 +108,12 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # starship prompt
 eval "$(starship init zsh)"
+PATH=$(pyenv root)/shims:$PATH
+PATH=${PATH}:/Users/mkudryashov/dev/flutter/bin
+export PATH
+
+#aliases 
+alias lh="open -a 'Brave Browser' -n --args --incognito --auto-open-devtools-for-tabs --new-window http://localhost:3000"
+alias lvim="/Users/mkudryashov/.local/bin/lvim"
+export PATH=$PATH:/Users/mkudryashov/.spicetify
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"

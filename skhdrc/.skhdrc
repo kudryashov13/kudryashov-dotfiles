@@ -15,13 +15,13 @@ hyper - 9 : yabai -m space --focus 9
 hyper - a  : yabai -m space --focus prev
 hyper - d  : yabai -m space --focus next
 
-hyper - n : yabai -m space --create; \
-				sp=$(yabai -m query --spaces --display); \
-				ind=$(jq '.[length - 1].index' <<< "${sp}"); \
-				yabai -m window --space ${ind}; \
-				yabai -m space --focus ${ind};
+#hyper - n : yabai -m space --create; \
+#				sp=$(yabai -m query --spaces --display); \
+#				ind=$(jq '.[length - 1].index' <<< "${sp}"); \
+#				yabai -m window --space ${ind}; \
+#				yabai -m space --focus ${ind};
 
-hyper - w : yabai -m space --destroy
+#hyper - w : yabai -m space --destroy
 
 # Windows
 # Grid layout - <rows>:<cols>:<start-x>:<start-y>:<width>:<height>
@@ -34,18 +34,18 @@ ctrl + shift + cmd - j 	: yabai -m window --grid 2:2:0:1:1:1
 ctrl + shift + cmd - k 	: yabai -m window --grid 2:2:1:0:1:1
 ctrl + shift + cmd - l 	: yabai -m window --grid 2:2:1:1:1:1
 
-hyper - h : yabai -m window --resize left:-25:0
-hyper - l : yabai -m window --resize right:25:0
-hyper - j : yabai -m window --resize bottom:0:25
-hyper - k : yabai -m window --resize top:0:-25
+#hyper - h : yabai -m window --resize left:-25:0
+#hyper - l : yabai -m window --resize right:25:0
+#hyper - j : yabai -m window --resize bottom:0:25
+#hyper - k : yabai -m window --resize top:0:-25
 
-hyper - y : yabai -m window --resize left:25:0
-hyper - o : yabai -m window --resize right:-25:0
-hyper - u : yabai -m window --resize bottom:0:-25
-hyper - i : yabai -m window --resize top:0:25
+#hyper - y : yabai -m window --resize left:25:0
+#hyper - o : yabai -m window --resize right:-25:0
+#hyper - u : yabai -m window --resize bottom:0:-25
+#hyper - i : yabai -m window --resize top:0:25
 
-hyper - r : yabai -m space --balance
-hyper - c : yabai -m window --grid 12:12:2:1:8:10
+#hyper - r : yabai -m space --balance
+hyper - c : yabai -m window --grid 10:10:2:2:6:6
 hyper - f : yabai -m window --grid 1:1:0:0:1:1
 
 # alt-k
@@ -68,7 +68,7 @@ meh - k		: yabai -m window --swap next || yabai -m window --swap first
 meh - j		: yabai -m window --swap prev || yabai -m window --swap last
 meh - r 	: yabai -m space --rotate 180
 
-meh - 1		: yabai -m window --space 1
+meh - 1		: yabai -m window --space 1 
 meh - 2		: yabai -m window --space 2
 meh - 3		: yabai -m window --space 3
 meh - 4		: yabai -m window --space 4
