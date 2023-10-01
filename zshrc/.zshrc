@@ -117,3 +117,11 @@ alias lh="open -a 'Brave Browser' -n --args --incognito --auto-open-devtools-for
 alias lvim="/Users/mkudryashov/.local/bin/lvim"
 export PATH=$PATH:/Users/mkudryashov/.spicetify
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/mkudryashov/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
