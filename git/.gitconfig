@@ -1,7 +1,10 @@
 [user]
-	email = kudryashov.m@inventive.ru
-	name = Maxim Kudryashov
+	email = maksim.kudryashov@gazprombank.ru
+	name = Кудряшов Максим
 [core]
 	excludesfile = /Users/mkudryashov/.gitignore
 [pull]
 	rebase = false
+[http]
+	sslbackend = secure-transport
+	sslVerify = true
